@@ -17,7 +17,7 @@ class Box extends BaseClass {
     }
   }
   score(){
-    if(this.visibility<0 && this.visibility>-1500)
+    if(this.visibility<0 && this.visibility>-105)
     score++   
   }
 

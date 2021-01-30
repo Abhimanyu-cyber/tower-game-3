@@ -156,3 +156,15 @@ function keyPressed(){
         chain.attach(attacker.body);
     }
 }
+
+async function getTime(){
+    var response=await fetch("http://worldtimeapi.org/api/timezone/Asia/Kolkata");
+    var responseJSON=await response.json();
+    var datetime=responseJSON.datetime;
+    console.log(responseJSON.datetime);
+    datetime.slice(11,13);
+}
+    
+    if(hour>=5 && hour<=19){
+        bg=
+        

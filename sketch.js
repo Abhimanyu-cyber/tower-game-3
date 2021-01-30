@@ -7,8 +7,7 @@ var engine, world,score=0;
 var ground,catapult,attacker;
 
 function preload() {
-    backgroundImg = loadImage("bg.png");
-    //ground=loadImage("sprites/bg.png")
+    getTime();
 }
 
 function setup(){
@@ -163,8 +162,14 @@ async function getTime(){
     var datetime=responseJSON.datetime;
     console.log(responseJSON.datetime);
     datetime.slice(11,13);
-}
+
     
     if(hour>=5 && hour<=19){
-        bg=
+        bg="bg.png"
+    }else{
+    bg="bg2.jpg"
+    }
+ backgroundimg=loadImage(bg);
+}
+
         

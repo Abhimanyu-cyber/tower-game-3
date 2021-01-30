@@ -4,7 +4,7 @@ const Bodies = Matter.Bodies;
 const Constraint = Matter.Constraint;
 
 var engine, world,score=0;
-var ground,catapult,attacker;
+var ground,catapult,attacker,backgroundimg;
 
 function preload() {
     getTime();
